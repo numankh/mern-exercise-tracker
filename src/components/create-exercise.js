@@ -48,9 +48,9 @@ export default class CreateExercise extends Component {
     });
   }
 
-  onChangeDate(e) {
+  onChangeDate(date) {
     this.setState({
-      date: e.target.value
+      date: date
     });
   }
 
@@ -65,6 +65,8 @@ export default class CreateExercise extends Component {
     }
 
     console.log(exercise);
+
+    // TODO: POST request to add exercise to database
 
     // user will be returned to the homepage
     window.location = '/'; 
